@@ -3,7 +3,7 @@
 exports.handler = async (event, context) => {
   let image
   try {
-    image = fs.readFileSync('./img/' + Math.floor(Math.random() * 116) + '.jpg');
+    image = fs.readFileSync('/img/' + Math.floor(Math.random() * 116) + '.jpg');
   } catch (error) {
     console.log('error', error)
     return {
