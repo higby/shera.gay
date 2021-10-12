@@ -9,5 +9,18 @@
 
 [[redirects]]
   from = '/gay'
-  to = '/.netlify/functions/:splat'
+  to = '/.netlify/functions/gay'
   status = 200
+
+[[redirects]]
+  from = '/random'
+  to = '/.netlify/functions/random'
+  status = 200
+
+[[redirects]]
+  from = '/gay.jpg'
+  to = '/gay'
+
+[[redirects]]
+  from = '/random.jpg'
+  to = '/random'

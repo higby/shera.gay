@@ -1,6 +1,7 @@
 ---
 permalink: /index.html
 layout: default
+title: She-Ra is Gay
 ---
 
-<div><img src="/gay.jpg" alt="gay"></div>
+<div><img src="/gay" alt="gay"></div>
