@@ -6,7 +6,7 @@ const hours = Math.abs(currentDate - comparisonDate) / 36e5;
 exports.handler = async (event, context) => {
   let image
   try {
-    image = fs.readFileSync('./src/assets/static/img/' + Math.floor(hours % 117) + '.jpg');
+    image = fs.readFileSync('./img/' + Math.floor(hours % 117) + '.jpg');
   } catch (error) {
     console.log('error', error)
     return {
