@@ -1,9 +1,11 @@
-﻿const fs = require('fs')
+﻿const fetch = require('node-fetch')
 
 exports.handler = async (event, context) => {
+
   let image
   try {
-    image = fs.readFileSync('/img/' + Math.floor(Math.random() * 116) + '.jpg');
+    const result = await fetch('https://shera.gay/img/' + Math.floor(Math.random() * 116) + '.jpg')
+    image = await result.buffer()
   } catch (error) {
     console.log('error', error)
     return {
