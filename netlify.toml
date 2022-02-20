@@ -3,9 +3,11 @@
   publish = 'build'
   functions = 'src/functions'
 
+[functions]
+  included_files = ["src/assets/img/**"]
+
 [dev]
   command = 'npm run start'
-
 
 [[redirects]]
   from = '/gay'
