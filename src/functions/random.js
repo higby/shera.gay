@@ -1,7 +1,7 @@
 ﻿const fs = require("fs");
 
 exports.handler = async (event, context) => {
-  const image = fs.readFileSync("./src/assets/img/" + Math.floor(Math.random() * 116) + ".jpg");
+  const image = fs.readFileSync("./assets/img/" + Math.floor(Math.random() * 116) + ".jpg");
   
   return {
     statusCode: 200,
