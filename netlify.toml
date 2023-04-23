@@ -1,28 +1,9 @@
 [build]
-  command = 'npm run build'
-  publish = 'build'
-  functions = 'src/functions'
-
-[functions]
-  included_files = ["src/assets/img/**"]
-
-[dev]
-  command = 'npm run start'
+command = 'npm run build'
+publish = 'build'
+edge_functions = 'src/functions/edge'
 
 [[redirects]]
-  from = '/gay'
-  to = '/.netlify/functions/gay'
-  status = 200
-
-[[redirects]]
-  from = '/random'
-  to = '/.netlify/functions/random'
-  status = 200
-
-[[redirects]]
-  from = '/gay.jpg'
-  to = '/gay'
-
-[[redirects]]
-  from = '/random.jpg'
-  to = '/random'
+from = "/*"
+to = "/"
+status = 301

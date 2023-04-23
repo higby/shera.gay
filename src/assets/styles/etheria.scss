@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: linear-gradient(
+    124deg,
+    #D52D00 14.28%,
+    #EF7627 14.28%,
+    #EF7627 28.57%,
+    #FF9A56 28.57%,
+    #FF9A56 42.85%,
+    #FFFFFF 42.85%,
+    #FFFFFF 57.14%,
+    #D162A4 57.14%,
+    #D162A4 71.42%,
+    #B55690 71.42%,
+    #B55690 85.71%,
+    #A30262 85.71%
+  );
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+picture { 
+  display: contents;
+}
+
+img {
+  width: 85%;
+  height: auto;
+  display: block;
+  border-radius: .25rem;
+}
+
